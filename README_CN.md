@@ -17,6 +17,12 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 
 ## 目录
 
+### Video
+
+- Code
+  - [Calculator](/Calculator/)
+  - [CalculatorPlayground](/CalculatorPlayground.playground/)
+
 ## LICENSE
 
 MIT

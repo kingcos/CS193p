@@ -17,6 +17,12 @@ I will share my own notes & code here. If you find some bugs, please issue me!
 
 ## Content
 
+### Video
+
+- Code
+  - [Calculator](/Calculator/)
+  - [CalculatorPlayground](/CalculatorPlayground.playground/)
+
 ## LICENSE
 
 MIT
