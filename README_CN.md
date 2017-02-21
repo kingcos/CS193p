@@ -26,10 +26,16 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 ### Document
 
 - Notes
-  - [CS193p 查漏补缺（一）Lecture 03](http://www.jianshu.com/p/95cb7f051792)
+  - [CS193p 查漏补缺（一）Lecture 03](/Lecture03/)
+  - [CS193p 查漏补缺（一）Lecture 03 - 简书](http://www.jianshu.com/p/95cb7f051792)
 
 - Code
   - [Lecture03Playground](/Lecture03/)
+
+## Personal Info.
+
+- [博客](http://maimieng.com)
+- [简书](http://www.jianshu.com/u/b88081164fe8)
 
 ## LICENSE
 

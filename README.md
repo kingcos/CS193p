@@ -26,10 +26,15 @@ I will share my own notes & code here. If you find some bugs, please issue me!
 ### Document
 
 - Notes
-  - [CS193p Lecture 03 Notes](http://www.jianshu.com/p/95cb7f051792)
+  - [CS193p Lecture 03 Notes](/Lecture03/)
 
 - Code
   - [Lecture03Playground](/Lecture03/)
+
+## Personal Info.
+
+- [Blog](http://maimieng.com)
+- [JianShu](http://www.jianshu.com/u/b88081164fe8)
 
 ## LICENSE
 
