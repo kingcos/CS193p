@@ -23,6 +23,14 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [Calculator](/Calculator/)
   - [CalculatorPlayground](/CalculatorPlayground.playground/)
 
+### Document
+
+- Notes
+  - [CS193p Lecture 03 Notes](http://www.jianshu.com/p/95cb7f051792)
+
+- Code
+  - [Lecture03Playground](/Lecture03/)
+
 ## LICENSE
 
 MIT
