@@ -23,6 +23,7 @@ class FaceView: UIView {
         return CGPoint(x: bounds.midX, y: bounds.midY)
     }
     
+    // 比例
     private struct Ratios {
         static let skullRadiusToEyeOffset: CGFloat = 3.0
         static let skullRadiusToEyeRadius: CGFloat = 10.0
@@ -31,24 +32,25 @@ class FaceView: UIView {
         static let skullRadiusToMouthOffset: CGFloat = 3.0
     }
     
+    // 眼睛枚举
     private enum Eye {
         case left
         case right
     }
     
-    // 必须指定类型，才能在 Attributes Inspector 设置
+    // 必须指定类型，才能在 Attributes Inspector 设置；设值后重新绘制 setNeedsDisplay()
     @IBInspectable
-    var scale: CGFloat = 0.9
+    var scale: CGFloat = 0.8 { didSet { setNeedsDisplay() } }
     @IBInspectable
-    var lineWidth: CGFloat = 5.0
+    var lineWidth: CGFloat = 5.0 { didSet { setNeedsDisplay() } }
     @IBInspectable
-    var lineColor: UIColor = .blue
+    var lineColor: UIColor = .blue { didSet { setNeedsDisplay() } }
     
-    // 笑容弧度 1.0 Happy -1.0 Frown
+    // 嘴巴弧度 1.0: Smile, -1.0: Frown
     @IBInspectable
-    var mouthCurvature: Double = -1.0
+    var mouthCurvature: Double = 0.0 { didSet { setNeedsDisplay() } }
     @IBInspectable
-    var eyesOpen: Bool = true
+    var eyesOpen: Bool = true { didSet { setNeedsDisplay() } }
 
     // 若不自定义绘制，则不要重写该方法（将会影响性能）
     override func draw(_ rect: CGRect) {
@@ -61,7 +63,7 @@ class FaceView: UIView {
     }
     
     private func pathForSkull() -> UIBezierPath {
-        // 绘制路径
+        // 绘制路径（圆）
         let path = UIBezierPath(arcCenter: skullCenter, radius: skullRadius, startAngle: 0.0, endAngle: 2.0 * CGFloat.pi, clockwise: false)
         
         // 线宽
@@ -122,4 +124,14 @@ class FaceView: UIView {
         return path
     }
     
+    // 捏合手势放大缩小
+    func changeScale(byReactingTo pinchRecognizer: UIPinchGestureRecognizer) {
+        switch pinchRecognizer.state {
+        case .changed, .ended:
+            scale *= pinchRecognizer.scale
+            pinchRecognizer.scale = 1
+        default:
+            break
+        }
+    }
 }
