@@ -22,6 +22,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 - Code
   - [Calculator](/Calculator/)
   - [CalculatorPlayground](/CalculatorPlayground.playground/)
+  - [FaceIt](/FaceIt)
 
 ### Document
 

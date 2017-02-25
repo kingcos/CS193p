@@ -22,6 +22,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
 - Code
   - [Calculator](/Calculator/)
   - [CalculatorPlayground](/CalculatorPlayground.playground/)
+  - [FaceIt](/FaceIt)
 
 ### Document
 
