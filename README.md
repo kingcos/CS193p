@@ -29,10 +29,12 @@ I will share my own notes & code here. If you find some bugs, please issue me!
 - Notes
   - [CS193p Lecture 03 Notes (zh-CN)](/Lecture03/)
   - [CS193p Lecture 04 Notes (zh-CN)](/Lecture04/)
+  - [CS193p Lecture 05 Notes (zh-CN)](/Lecture05/)
 
 - Code
   - [Lecture 03 Playground](/Lecture03/)
   - [Lecture 04 Demo](/Lecture04/)
+  - [Lecture 05 Demo](/Lecture05/)
 
 ## Personal Info.
 
