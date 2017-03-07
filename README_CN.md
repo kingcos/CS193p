@@ -41,7 +41,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [Lecture 04 Demo](/Lecture04/)
   - [Lecture 05 Demo](/Lecture05/)
 
-## 引用
+## 参考
 
 - [Swift 中的值类型与引用类型](http://www.jianshu.com/p/ba12b64f6350)
 - [浅谈 Swift 中的属性（Property）](http://www.jianshu.com/p/fe60f5bafab3)

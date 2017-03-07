@@ -87,7 +87,7 @@ brain.addUnaryOperation(named: "✅") {
 
 - 解决闭包中的循环引用的方法：
 
-1. weak
+- *weak*
 
 ```Swift
 brain.addUnaryOperation(named: "✅") { [weak self] in
@@ -102,7 +102,7 @@ brain.addUnaryOperation(named: "✅") { [weak weakSelf = self] in
 }
 ```
 
-2. unowned
+- *unowned*
 
 ```Swift
 brain.addUnaryOperation(named: "✅") { [me = self] in
