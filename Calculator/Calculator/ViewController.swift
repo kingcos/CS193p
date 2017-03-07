@@ -59,5 +59,53 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewDidLoad() {
+//        brain.addUnaryOperation(named: "✅") { (value) -> Double in
+//            return sqrt(value)
+//        }
+        
+//        brain.addUnaryOperation(named: "✅") {
+//            return sqrt($0)
+//        }
+        
+//        brain.addUnaryOperation(named: "✅") {
+//            self.display.textColor = UIColor.green
+//            return sqrt($0)
+//        }
+        
+        // weak
+//        brain.addUnaryOperation(named: "✅") { [weak self] in
+//            // self 为 Optional
+//            self?.display.textColor = UIColor.green
+//            return sqrt($0)
+//        }
+//
+//        brain.addUnaryOperation(named: "✅") { [weak weakSelf = self] in
+//            weakSelf?.display.textColor = UIColor.green
+//            return sqrt($0)
+//        }
+        
+        // unowned
+//        brain.addUnaryOperation(named: "✅") { [me = self] in
+//            me.display.textColor = UIColor.green
+//            return sqrt($0)
+//        }
+//        
+//        brain.addUnaryOperation(named: "✅") { [unowned me = self] in
+//            me.display.textColor = UIColor.green
+//            return sqrt($0)
+//        }
+//        
+//        brain.addUnaryOperation(named: "✅") { [unowned self = self] in
+//            self.display.textColor = UIColor.green
+//            return sqrt($0)
+//        }
+        
+        brain.addUnaryOperation(named: "✅") { [unowned self] in
+            self.display.textColor = UIColor.green
+            return sqrt($0)
+        }
+    }
+    
 }
 

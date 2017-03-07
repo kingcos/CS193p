@@ -10,6 +10,11 @@ import Foundation
 
 struct CalculatorBrain {
     
+    // Lecture 06 Update: Escaping Closure: @escaping
+    mutating func addUnaryOperation(named symbol: String, _ operation: @escaping (Double) -> Double) {
+        operations[symbol] = Operation.unaryOperation(operation)
+    }
+    
     private var accumulator: Double?
     private var operations: Dictionary<String, Operation> = [
         "π" : Operation.constant(Double.pi),

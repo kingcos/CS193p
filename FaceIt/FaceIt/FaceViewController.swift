@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FaceViewController.swift
 //  FaceIt
 //
 //  Created by 买明 on 24/02/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FaceViewController: VCLLoggingViewController {
     
     @IBOutlet weak var faceView: FaceView! {
         didSet {
@@ -75,7 +75,6 @@ class ViewController: UIViewController {
     func decreaseHappiness() {
         expression = expression.sadder
     }
-    
     
 }
 

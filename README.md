@@ -30,6 +30,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [CS193p Lecture 03 Notes (zh-CN)](/Lecture03/)
   - [CS193p Lecture 04 Notes (zh-CN)](/Lecture04/)
   - [CS193p Lecture 05 Notes (zh-CN)](/Lecture05/)
+  - [CS193p Lecture 06 Notes (zh-CN)](/Lecture06/)
 
 - Code
   - [Lecture 03 Playground](/Lecture03/)
@@ -40,6 +41,8 @@ I will share my own notes & code here. If you find some bugs, please issue me!
 
 - [Blog](http://maimieng.com)
 - [JianShu](http://www.jianshu.com/u/b88081164fe8)
+- [WeiBo](http://weibo.com/u/1798410923)
+- [Twitter](https://twitter.com/mmdadao)
 
 ## LICENSE
 
