@@ -1,7 +1,6 @@
-# CS193p 查漏补缺（四）Lecture 06
+# CS193p 查漏补缺（五）Lecture 07
 
 > Developing iOS 10 Apps with Swift - CS193p
-
 
 - Info:
  - Swift 3.0
@@ -14,120 +13,167 @@ CS193p 是斯坦福大学的一门公开课，今年 iOS 10 & Swift 3.0 的版�
 
 由于之前学过 Swift，也相信学习这门课的同学应当有一些 Swift 基础，所以定为查漏补缺，目标只将难点、重点、常用点总结。
 
-## Life Cycle
+## Error
 
-> 对象的生命周期一直是我们所需要关心的，老师在这一节也详细的讲述了 ViewController 的生命周期。为了搞清楚生命周期，特将该部分单独行文：[探究 UIViewController 生命周期](http://www.jianshu.com/p/9d3d95e1ef5a)。同时也更新了之前所写的[探究 UIView 生命周期（原题为：初探 iOS 中自定义 UIView 的初始化过程）](http://www.jianshu.com/p/bfea8efee664)。
+> 一个程序总有不可避免的错误（error），每个编程语言都有相关的错误处理机制。又由于 Swift 和 Obj-C 的交接，iOS 开发中不免得要同时和两门语言的错误处理打交道。因此这个话题比较广，单独列出为 [Swift 中的错误处理](http://www.jianshu.com/p/16bfad50c39a)。
 
-## Memory Management
+## Extension
 
-> 内存管理也是 iOS 中不可回避的问题，但由于我个人能力有限，这里只记录了老师所讲的点，未来可能会再进行总结。
-
-- ARC: Automatic Reference Count 自动引用计数（!= Garbage Collection 垃圾回收）
-- 引用类型（例如类）存储在堆（Heap）中。
-
-### strong
-
-- 「强」引用：
-  - 默认的引用指针，可省略
-  - 只要有强引用指针指向，对象将一直保存在堆中。
-
-### weak
-
-- 「弱」引用：
-  - 当对象没有被使用时，即被销毁（nil）。
-  - 弱引用用于指向引用类型的可选类型指针。
-  - 弱引用指针将不会把对象保存在堆中。
-- 例子：
-  - outlets（其被视图层次强力持有，所以可为 weak）。
-
-### unowned
-
-- 「不」持有：
-  - 需确保指针指向的对象没有被销毁（离开堆），否则程序会崩溃。
-  - 常只用于打破循环引用。
-
-### Closures
-
-> 此处代码已更新至 [Calculator](https://github.com/kingcos/CS193P_2017/tree/master/Calculator)。
-
-- 闭包是引用类型，同样存储在堆区。
-- 闭包可以放在数组，字典等，是 Swift 的一等（first-class）类型。
-- 当作为参数的闭包，执行的时机超出其自身时，需声明为逃逸闭包，即在闭包参数前加 `@escaping`：
+- Extension，即扩展，类似于 Obj-C 的分类（Category）。
+- 利用扩展，可以为类，结构体，枚举中添加方法和属性。
+- 扩展中不能包含其本身已有的方法或属性。
+- 只能扩展计算属性，不能扩展存储属性。
+- 不可滥用扩展。
 
 ```Swift
-mutating func addUnaryOperation(named symbol: String, _ operation: @escaping (Double) -> Double) {
-    operations[symbol] = Operation.unaryOperation(operation)
+extension UIViewController {
+    var contentViewController: UIViewController! {
+        // Extension 中的 self 指的是扩展的 UIViewController
+        if let navcon = self as? UINavigationController {
+            return navcon.visibleViewController
+        } else {
+            return self
+        }
+    }
 }
 ```
 
-- 逃逸尾随闭包的使用：
+## Protocols
 
-```Swift
-// 常规写法
-brain.addUnaryOperation(named: "✅") { (value) -> Double in
-    return sqrt(value)
+- Protocol，即协议，类似其他语言的接口（interface），是一系列方法和属性的声明集合。
+- 协议中不支持存储属性。
+- 一个协议可以继承自多个协议。
+- 一个协议实现者也可以继承自多个协议。
+
+```swift
+protocol InheritedProtocolA {
+    func aMethod()
 }
 
-// 简写
-brain.addUnaryOperation(named: "✅") {
-    return sqrt($0)
+protocol InheritedProtocolB {
+    func bMethod()
+}
+
+protocol SomeProtocol: InheritedProtocolA, InheritedProtocolB {
+    // 协议中的属性只能是计算属性，且必须指定只读或可读可写
+    var someProperty: Int { get set }
+    func someMethod(arg1: Double, arg2: String) -> String
+    // 希望方法修改自身，可以加上 mutating 关键字
+    mutating func changeIt()
+    init(arg: Int)
+}
+
+// class: 将规定只能由类实现该协议
+protocol AProtocol: class {
+    init(arg: Int)
+}
+
+// 协议中的初始化方法必须加上 required 关键字，否则其子类可能不会实现该方法
+class ClassDemo: AProtocol {
+    var propA: Int
+
+    required internal init(arg: Int) {
+        propA = arg
+    }
+}
+
+protocol BProtocol {
+    func printf()
+    init(arg: Int)
+}
+
+// 扩展也可实现协议，常被用来作为协议的默认实现
+extension ClassDemo: BProtocol {
+    func printf() {
+        print(#function)
+    }
+}
+```
+
+### Swift & Obj-C Protocol
+
+- Swift 中的协议实现者必须实现协议中所有方法和属性。
+- Obj-C 中的协议可以选择实现者是否必须实现。
+
+```Swift
+protocol SwiftProtocol {
+    func thisMustBeImplemented()
+}
+
+@objc protocol ObjCProtocol {
+    @objc optional func thisMaybeNotImplemented()
 }
 ```
 
-- 只要闭包仍保留在堆中，那么其捕获的引用也仍在堆中。
-- 闭包中的循环引用：
+### A protocol as a type
+
+- 一个协议是 Swift 中的一个类型。
 
 ```Swift
-// 此时模型和控制器在闭包中相互引用，构成循环引用
-brain.addUnaryOperation(named: "✅") {
-    self.display.textColor = UIColor.green
-    return sqrt($0)
+protocol Moveable {
+    mutating func move(to point: CGPoint)
+}
+
+class Car: Moveable {
+    internal func move(to point: CGPoint) {
+        print("move to\(point)")
+    }
+
+    func changeOil() {
+        print(#function)
+    }
+}
+
+struct Shape: Moveable {
+    mutating internal func move(to point: CGPoint) {
+        print("move to\(point)")
+    }
+
+    func draw() {
+        print(#function)
+    }
+}
+
+let prius: Car = Car()
+let square: Shape = Shape()
+
+
+let thingsToMove: [Moveable] = [prius, square]
+
+func slide(_ slider: Moveable) {
+    var slider = slider
+    let point = CGPoint.zero
+    slider.move(to: point)
+}
+
+for thing in thingsToMove {
+    slide(thing)
 }
 ```
 
-- 解决闭包中的循环引用的方法：
+### Protocol with generics
 
-- *weak*
-
-```Swift
-brain.addUnaryOperation(named: "✅") { [weak self] in
-    // self 为 Optional
-    self?.display.textColor = UIColor.green
-    return sqrt($0)
-}
-
-brain.addUnaryOperation(named: "✅") { [weak weakSelf = self] in
-    weakSelf?.display.textColor = UIColor.green
-    return sqrt($0)
-}
-```
-
-- *unowned*
+- 协议可以用来限制范型。
 
 ```Swift
-brain.addUnaryOperation(named: "✅") { [me = self] in
-    me.display.textColor = UIColor.green
-    return sqrt($0)
-}
-
-brain.addUnaryOperation(named: "✅") { [unowned me = self] in
-    me.display.textColor = UIColor.green
-    return sqrt($0)
-}
-
-brain.addUnaryOperation(named: "✅") { [unowned self = self] in
-    self.display.textColor = UIColor.green
-    return sqrt($0)
-}
-
-brain.addUnaryOperation(named: "✅") { [unowned self] in
-    self.display.textColor = UIColor.green
-    return sqrt($0)
+// Comparable 协议约束了 Range 中的范型必须实现该协议
+struct Range<Bound: Comparable> {
+    let lowerBound: Bound
+    let upperBound: Bound
 }
 ```
+## Delegation
+
+> 通过 [Cassini](https://github.com/kingcos/CS193P_2017/tree/master/Cassini) 可以很清楚的了解代理的基本使用。
+
+- 视图声明代理协议；
+- 视图拥有 weak delegate 属性；
+- 视图利用 delegate 属性进行其自己不能掌控的事情；
+- 控制器声明实现该协议；
+- 控制器设置 self 为视图的 delegate 属性；
+- 控制器实现协议中的方法和属性。
 
 ## Reference
 
 - [CS193P_2017](https://github.com/kingcos/CS193P_2017)
-- [探究 UIView 生命周期](http://www.jianshu.com/p/bfea8efee664)
-- [探究 UIViewController 生命周期](http://www.jianshu.com/p/9d3d95e1ef5a)
+- [Swift 中的错误处理](http://www.jianshu.com/p/16bfad50c39a)
