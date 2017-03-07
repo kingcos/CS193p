@@ -23,6 +23,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [Calculator](/Calculator/)
   - [CalculatorPlayground](/CalculatorPlayground.playground/)
   - [FaceIt](/FaceIt)
+  - [Cassini](/Cassini)
 
 ### 文档
 
@@ -35,6 +36,8 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [CS193p 查漏补缺（三）Lecture 05 - 简书](http://www.jianshu.com/p/7664bf96fe3d)
   - [CS193p 查漏补缺（四）Lecture 06](/Lecture06/)
   - [CS193p 查漏补缺（四）Lecture 06 - 简书](http://www.jianshu.com/p/e481c69db305)
+  - [CS193p 查漏补缺（五）Lecture 07](/Lecture07/)
+  - [CS193p 查漏补缺（五）Lecture 07 - 简书](http://www.jianshu.com/p/4c0194f149d0)
 
 - 代码
   - [Lecture 03 Playground](/Lecture03/)
@@ -52,6 +55,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 - [isOpaque - Apple Inc.](https://developer.apple.com/reference/uikit/uiview/1622622-isopaque)
 - [探究 UIView 生命周期](http://www.jianshu.com/p/bfea8efee664)
 - [探究 UIViewController 生命周期](http://www.jianshu.com/p/9d3d95e1ef5a)
+- [Swift 中的错误处理](http://www.jianshu.com/p/16bfad50c39a)
 
 ## 个人
 

@@ -23,6 +23,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [Calculator](/Calculator/)
   - [CalculatorPlayground](/CalculatorPlayground.playground/)
   - [FaceIt](/FaceIt)
+  - [Cassini](/Cassini)
 
 ### Document
 
@@ -31,6 +32,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [CS193p Lecture 04 Notes (zh-CN)](/Lecture04/)
   - [CS193p Lecture 05 Notes (zh-CN)](/Lecture05/)
   - [CS193p Lecture 06 Notes (zh-CN)](/Lecture06/)
+  - [CS193p Lecture 07 Notes (zh-CN)](/Lecture07/)
 
 - Code
   - [Lecture 03 Playground](/Lecture03/)
