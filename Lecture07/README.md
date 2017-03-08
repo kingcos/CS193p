@@ -15,8 +15,55 @@ CS193p 是斯坦福大学的一门公开课，今年 iOS 10 & Swift 3.0 的版�
 
 ## Error
 
-> 一个程序总有不可避免的错误（error），每个编程语言都有相关的错误处理机制。又由于 Swift 和 Obj-C 的交接，iOS 开发中不免得要同时和两门语言的错误处理打交道。因此这个话题比较广，单独列出为 [Swift 中的错误处理](http://www.jianshu.com/p/16bfad50c39a)。
+- 异常（Exception）不等于错误（Error）。
 
+### throws
+
+- 当一个方法有可能导致错误时，可以使用 throws 标志其可能抛出错误。
+
+```Swift
+enum SaveError: Error {
+    case sizeTooBig
+    case notFound
+}
+
+func save() throws -> String {
+    // do sth...
+    throw SaveError.notFound
+}
+```
+
+### try
+
+- 当调用一个 throws 的方法时，可以使用 do-catch 来捕获错误。
+
+```Swift
+func throwErr() throws {
+    do {
+        try save()
+    } catch let error {
+        throw error
+    }
+}
+```
+
+#### try?
+
+- 当抛出错误时，返回 nil。
+
+```Swift
+// x: String?
+let x = try? save()
+```
+
+#### try!
+
+- 当抛出错误时，程序崩溃。
+- 只在确定不会出现错误时使用。
+
+```Swift
+let y = try! save()
+```
 ## Extension
 
 - Extension，即扩展，类似于 Obj-C 的分类（Category）。
@@ -176,4 +223,3 @@ struct Range<Bound: Comparable> {
 ## Reference
 
 - [CS193P_2017](https://github.com/kingcos/CS193P_2017)
-- [Swift 中的错误处理](http://www.jianshu.com/p/16bfad50c39a)
