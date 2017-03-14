@@ -38,11 +38,14 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [CS193p 查漏补缺（四）Lecture 06 - 简书](http://www.jianshu.com/p/e481c69db305)
   - [CS193p 查漏补缺（五）Lecture 07](/Lecture07/)
   - [CS193p 查漏补缺（五）Lecture 07 - 简书](http://www.jianshu.com/p/4c0194f149d0)
+  - [CS193p 查漏补缺（六）Lecture 08](/Lecture08/)
+  - [CS193p 查漏补缺（六）Lecture 08 - 简书](http://www.jianshu.com/p/d5f5b8e52a01)
 
 - 代码
   - [Lecture 03 Playground](/Lecture03/)
   - [Lecture 04 Demo](/Lecture04/)
   - [Lecture 05 Demo](/Lecture05/)
+  - [Lecture 08 Demo](/Lecture08/)
 
 ## 参考
 
@@ -53,16 +56,17 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 - [iOS 中的 bounds & frame](http://www.jianshu.com/p/edb2ae03115c)
 - [tangqiaoboy/iOS-Pro](https://github.com/tangqiaoboy/iOS-Pro)
 - [isOpaque - Apple Inc.](https://developer.apple.com/reference/uikit/uiview/1622622-isopaque)
-- [探究 UIView 生命周期](http://www.jianshu.com/p/bfea8efee664)
 - [探究 UIViewController 生命周期](http://www.jianshu.com/p/9d3d95e1ef5a)
 - [Swift 中的错误处理](http://www.jianshu.com/p/16bfad50c39a)
+- [小窥 iOS 中的 Target-Action 设计模式](http://www.jianshu.com/p/b00056fac0a8)
 
 ## 个人
 
-- [博客](http://maimieng.com)
-- [简书](http://www.jianshu.com/u/b88081164fe8)
 - [微博](http://weibo.com/u/1798410923)
 - [推特](https://twitter.com/mmdadao)
+- [博客](http://maimieng.com)
+- [简书](http://www.jianshu.com/u/b88081164fe8)
+- [掘金](https://juejin.im/user/576a484d1532bc006046d078)
 
 ## 许可
 

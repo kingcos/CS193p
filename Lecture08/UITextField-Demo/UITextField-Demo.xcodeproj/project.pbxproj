@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		843DADA71E6E90130089127C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DADA61E6E90130089127C /* AppDelegate.swift */; };
-		843DADAC1E6E90130089127C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843DADAA1E6E90130089127C /* Main.storyboard */; };
-		843DADAE1E6E90130089127C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843DADAD1E6E90130089127C /* Assets.xcassets */; };
-		843DADB11E6E90130089127C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843DADAF1E6E90130089127C /* LaunchScreen.storyboard */; };
-		843DADBA1E6E946A0089127C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DADB91E6E946A0089127C /* ImageViewController.swift */; };
-		843DADBC1E6E98F20089127C /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DADBB1E6E98F20089127C /* DemoURL.swift */; };
-		84B0F9941E73E726005AAAB4 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F9931E73E726005AAAB4 /* CassiniViewController.swift */; };
+		84CD41E81E778BAB008745FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD41E71E778BAB008745FF /* AppDelegate.swift */; };
+		84CD41EA1E778BAB008745FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD41E91E778BAB008745FF /* ViewController.swift */; };
+		84CD41ED1E778BAB008745FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD41EB1E778BAB008745FF /* Main.storyboard */; };
+		84CD41EF1E778BAB008745FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CD41EE1E778BAB008745FF /* Assets.xcassets */; };
+		84CD41F21E778BAB008745FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD41F01E778BAB008745FF /* LaunchScreen.storyboard */; };
+		84CD41FA1E778C79008745FF /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD41F91E778C79008745FF /* MyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		843DADA31E6E90130089127C /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		843DADA61E6E90130089127C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		843DADAB1E6E90130089127C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		843DADAD1E6E90130089127C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		843DADB01E6E90130089127C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		843DADB21E6E90130089127C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		843DADB91E6E946A0089127C /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		843DADBB1E6E98F20089127C /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
-		84B0F9931E73E726005AAAB4 /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
+		84CD41E41E778BAB008745FF /* UITextField-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITextField-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CD41E71E778BAB008745FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84CD41E91E778BAB008745FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84CD41EC1E778BAB008745FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84CD41EE1E778BAB008745FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84CD41F11E778BAB008745FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84CD41F31E778BAB008745FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CD41F91E778C79008745FF /* MyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		843DADA01E6E90130089127C /* Frameworks */ = {
+		84CD41E11E778BAA008745FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,41 +37,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		843DAD9A1E6E90130089127C = {
+		84CD41DB1E778BAA008745FF = {
 			isa = PBXGroup;
 			children = (
-				843DADA51E6E90130089127C /* Cassini */,
-				843DADA41E6E90130089127C /* Products */,
+				84CD41E61E778BAB008745FF /* UITextField-Demo */,
+				84CD41E51E778BAB008745FF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		843DADA41E6E90130089127C /* Products */ = {
+		84CD41E51E778BAB008745FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				843DADA31E6E90130089127C /* Cassini.app */,
+				84CD41E41E778BAB008745FF /* UITextField-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		843DADA51E6E90130089127C /* Cassini */ = {
+		84CD41E61E778BAB008745FF /* UITextField-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				843DADB91E6E946A0089127C /* ImageViewController.swift */,
-				84B0F9931E73E726005AAAB4 /* CassiniViewController.swift */,
-				843DADAA1E6E90130089127C /* Main.storyboard */,
-				843DADBB1E6E98F20089127C /* DemoURL.swift */,
-				843DADB81E6E901F0089127C /* Supporting Files */,
+				84CD41E91E778BAB008745FF /* ViewController.swift */,
+				84CD41EB1E778BAB008745FF /* Main.storyboard */,
+				84CD41F91E778C79008745FF /* MyTextField.swift */,
+				84CD41FB1E778CF3008745FF /* Supporting Files */,
 			);
-			path = Cassini;
+			path = "UITextField-Demo";
 			sourceTree = "<group>";
 		};
-		843DADB81E6E901F0089127C /* Supporting Files */ = {
+		84CD41FB1E778CF3008745FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				843DADA61E6E90130089127C /* AppDelegate.swift */,
-				843DADAD1E6E90130089127C /* Assets.xcassets */,
-				843DADAF1E6E90130089127C /* LaunchScreen.storyboard */,
-				843DADB21E6E90130089127C /* Info.plist */,
+				84CD41E71E778BAB008745FF /* AppDelegate.swift */,
+				84CD41EE1E778BAB008745FF /* Assets.xcassets */,
+				84CD41F01E778BAB008745FF /* LaunchScreen.storyboard */,
+				84CD41F31E778BAB008745FF /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -81,41 +78,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		843DADA21E6E90130089127C /* Cassini */ = {
+		84CD41E31E778BAA008745FF /* UITextField-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843DADB51E6E90130089127C /* Build configuration list for PBXNativeTarget "Cassini" */;
+			buildConfigurationList = 84CD41F61E778BAB008745FF /* Build configuration list for PBXNativeTarget "UITextField-Demo" */;
 			buildPhases = (
-				843DAD9F1E6E90130089127C /* Sources */,
-				843DADA01E6E90130089127C /* Frameworks */,
-				843DADA11E6E90130089127C /* Resources */,
+				84CD41E01E778BAA008745FF /* Sources */,
+				84CD41E11E778BAA008745FF /* Frameworks */,
+				84CD41E21E778BAA008745FF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Cassini;
-			productName = Cassini;
-			productReference = 843DADA31E6E90130089127C /* Cassini.app */;
+			name = "UITextField-Demo";
+			productName = "UITextField-Demo";
+			productReference = 84CD41E41E778BAB008745FF /* UITextField-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		843DAD9B1E6E90130089127C /* Project object */ = {
+		84CD41DC1E778BAA008745FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "买明";
 				TargetAttributes = {
-					843DADA21E6E90130089127C = {
+					84CD41E31E778BAA008745FF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LEG7CXMPKJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 843DAD9E1E6E90130089127C /* Build configuration list for PBXProject "Cassini" */;
+			buildConfigurationList = 84CD41DF1E778BAA008745FF /* Build configuration list for PBXProject "UITextField-Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,56 +120,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 843DAD9A1E6E90130089127C;
-			productRefGroup = 843DADA41E6E90130089127C /* Products */;
+			mainGroup = 84CD41DB1E778BAA008745FF;
+			productRefGroup = 84CD41E51E778BAB008745FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				843DADA21E6E90130089127C /* Cassini */,
+				84CD41E31E778BAA008745FF /* UITextField-Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		843DADA11E6E90130089127C /* Resources */ = {
+		84CD41E21E778BAA008745FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843DADB11E6E90130089127C /* LaunchScreen.storyboard in Resources */,
-				843DADAE1E6E90130089127C /* Assets.xcassets in Resources */,
-				843DADAC1E6E90130089127C /* Main.storyboard in Resources */,
+				84CD41F21E778BAB008745FF /* LaunchScreen.storyboard in Resources */,
+				84CD41EF1E778BAB008745FF /* Assets.xcassets in Resources */,
+				84CD41ED1E778BAB008745FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		843DAD9F1E6E90130089127C /* Sources */ = {
+		84CD41E01E778BAA008745FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843DADBA1E6E946A0089127C /* ImageViewController.swift in Sources */,
-				843DADA71E6E90130089127C /* AppDelegate.swift in Sources */,
-				843DADBC1E6E98F20089127C /* DemoURL.swift in Sources */,
-				84B0F9941E73E726005AAAB4 /* CassiniViewController.swift in Sources */,
+				84CD41FA1E778C79008745FF /* MyTextField.swift in Sources */,
+				84CD41EA1E778BAB008745FF /* ViewController.swift in Sources */,
+				84CD41E81E778BAB008745FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		843DADAA1E6E90130089127C /* Main.storyboard */ = {
+		84CD41EB1E778BAB008745FF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				843DADAB1E6E90130089127C /* Base */,
+				84CD41EC1E778BAB008745FF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		843DADAF1E6E90130089127C /* LaunchScreen.storyboard */ = {
+		84CD41F01E778BAB008745FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				843DADB01E6E90130089127C /* Base */,
+				84CD41F11E778BAB008745FF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -180,7 +176,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		843DADB31E6E90130089127C /* Debug */ = {
+		84CD41F41E778BAB008745FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		843DADB41E6E90130089127C /* Release */ = {
+		84CD41F51E778BAB008745FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -273,27 +269,27 @@
 			};
 			name = Release;
 		};
-		843DADB61E6E90130089127C /* Debug */ = {
+		84CD41F71E778BAB008745FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
-				INFOPLIST_FILE = Cassini/Info.plist;
+				INFOPLIST_FILE = "UITextField-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maimieng.Cassini;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maimieng.UITextField-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		843DADB71E6E90130089127C /* Release */ = {
+		84CD41F81E778BAB008745FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
-				INFOPLIST_FILE = Cassini/Info.plist;
+				INFOPLIST_FILE = "UITextField-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maimieng.Cassini;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maimieng.UITextField-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,25 +298,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		843DAD9E1E6E90130089127C /* Build configuration list for PBXProject "Cassini" */ = {
+		84CD41DF1E778BAA008745FF /* Build configuration list for PBXProject "UITextField-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				843DADB31E6E90130089127C /* Debug */,
-				843DADB41E6E90130089127C /* Release */,
+				84CD41F41E778BAB008745FF /* Debug */,
+				84CD41F51E778BAB008745FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843DADB51E6E90130089127C /* Build configuration list for PBXNativeTarget "Cassini" */ = {
+		84CD41F61E778BAB008745FF /* Build configuration list for PBXNativeTarget "UITextField-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				843DADB61E6E90130089127C /* Debug */,
-				843DADB71E6E90130089127C /* Release */,
+				84CD41F71E778BAB008745FF /* Debug */,
+				84CD41F81E778BAB008745FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 843DAD9B1E6E90130089127C /* Project object */;
+	rootObject = 84CD41DC1E778BAA008745FF /* Project object */;
 }
