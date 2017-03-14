@@ -4,7 +4,7 @@
 
 - Info:
  - Swift 3.0
- - Xcode 8.2.1
+ - Xcode 8.3 beta
  - macOS 10.12.4 beta (16E175b)
 
 ## Preface
