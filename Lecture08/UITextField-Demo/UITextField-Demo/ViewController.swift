@@ -55,6 +55,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         myCodeTextField.keyboardType = .numberPad
         // 开始编辑时清空原有内容
         myCodeTextField.clearsOnBeginEditing = true
+        // 显示清空键
+        myCodeTextField.clearButtonMode = .whileEditing
         
         // 设置代理
         myCodeTextField.delegate = self
@@ -70,6 +72,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print(#function)
         return textField.resignFirstResponder()
+    }
+    
+    // Lifecycle Methods:
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        print(#function)
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print(#function)
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        print(#function)
+        return true
     }
     
     // 代理方法: 当完成输入后被调用
@@ -112,6 +130,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func keyboardWillDisappear(_ notification: Notification) {
         print(#function)
     }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        print(#function)
+        return true
+    }
+    
+    
+    
     
 }
 

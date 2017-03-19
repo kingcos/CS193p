@@ -13,7 +13,7 @@ CS193p 是斯坦福大学的一门公开课，今年 iOS 10 & Swift 3.0 的版�
 
 由于之前学过 Swift，也相信学习这门课的同学应当有一些 Swift 基础，所以定为查漏补缺，目标只将难点、重点、常用点总结。
 
-**本文对应的 Demo 可以在：[https://github.com/kingcos/CS193P_2017/tree/master/Lecture08](https://github.com/kingcos/CS193P_2017/tree/master/Lecture08) 查看、下载。需要注意的是，Xcode 的模拟器可能不会弹出软键盘，建议在真机运行、测试。**
+**本文对应的 Demo 可以在：[https://github.com/kingcos/CS193P_2017/tree/master/Lecture08](https://github.com/kingcos/CS193P_2017/tree/master/Lecture08) 查看、下载。模拟器中打开软键盘：Simulator-Hardware-Keyboard-Toggle Software Keyboard**
 
 ## Multithreading
 
