@@ -24,6 +24,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [CalculatorPlayground](/CalculatorPlayground.playground/)
   - [FaceIt](/FaceIt)
   - [Cassini](/Cassini)
+  - [Smashtag](/Smashtag)
 
 ### 文档
 

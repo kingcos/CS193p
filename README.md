@@ -24,6 +24,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [CalculatorPlayground](/CalculatorPlayground.playground/)
   - [FaceIt](/FaceIt)
   - [Cassini](/Cassini)
+  - [Smashtag](/Smashtag)
 
 ### Document
 
