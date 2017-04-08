@@ -16,7 +16,7 @@ CS193p 是斯坦福大学的一门公开课，今年 iOS 10 & Swift 3.0 的版�
 
 ## Life Cycle
 
-> 对象的生命周期一直是我们所需要关心的，老师在这一节也详细的讲述了 ViewController 的生命周期。为了搞清楚生命周期，特将该部分单独行文：[探究 UIViewController 生命周期](http://www.jianshu.com/p/9d3d95e1ef5a)。同时也更新了之前所写的[探究 UIView 生命周期（原题为：初探 iOS 中自定义 UIView 的初始化过程）](http://www.jianshu.com/p/bfea8efee664)。
+> 对象的生命周期一直是我们所需要关心的，老师在这一节也详细的讲述了 UIViewController 的生命周期。为了搞清楚其生命周期，特将该部分单独行文：[探究 UIViewController 生命周期](http://www.jianshu.com/p/9d3d95e1ef5a)。同时由于之前写了[初探 iOS 中自定义 UIView 的初始化过程](http://www.jianshu.com/p/bfea8efee664)，也更新了相应 Demo。
 
 ## Memory Management
 
