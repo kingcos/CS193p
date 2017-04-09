@@ -59,6 +59,29 @@ class ViewController: UIViewController {
         
     }
     
+    // Lecture 12
+    private func showSizeClasses() {
+        if !userIsInTheMiddleOfTyping {
+            display.textAlignment = .center
+            display.text = "width " + traitCollection.horizontalSizeClass.description
+                         + " height " + traitCollection.verticalSizeClass.description
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        showSizeClasses()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        coordinator.animate(alongsideTransition: { (coordinator) in
+            self.showSizeClasses()
+        }, completion: nil)
+    }
+    
     override func viewDidLoad() {
 //        brain.addUnaryOperation(named: "✅") { (value) -> Double in
 //            return sqrt(value)
@@ -109,3 +132,16 @@ class ViewController: UIViewController {
     
 }
 
+// Lecture 12
+extension UIUserInterfaceSizeClass: CustomStringConvertible {
+    public var description: String {
+        switch self {
+        case .compact:
+            return "Compact"
+        case .regular:
+            return "Regular"
+        case .unspecified:
+            return "??"
+        }
+    }
+}
