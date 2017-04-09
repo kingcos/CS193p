@@ -28,6 +28,7 @@ class TweetTableViewController: UITableViewController,
         didSet {
             searchTextField?.text = searchText
             searchTextField?.resignFirstResponder()
+            lastTwitterRequest = nil
             
             tweets.removeAll()
             tableView.reloadData()
@@ -36,25 +37,37 @@ class TweetTableViewController: UITableViewController,
         }
     }
     
-    private func twitterForRequest() -> Twitter.Request? {
+    private func twitterRequest() -> Twitter.Request? {
         if let query = searchText, !query.isEmpty {
-            return Twitter.Request(search: query, count: 100)
+//            return Twitter.Request(search: query, count: 100)
+            return Twitter.Request(search: "\(query) -filter:safe -filter:retweets", count: 100)
         }
         return nil
     }
 
     private func searchForTweets() {
-        if let request = twitterForRequest() {
+        if let request = lastTwitterRequest?.newer ?? twitterRequest() {
             lastTwitterRequest = request
             request.fetchTweets({ [weak self] newTweets in
                 DispatchQueue.main.async {
                     if request == self?.lastTwitterRequest {
-                        self?.tweets.insert(newTweets, at: 0)
-                        self?.tableView.insertSections([0], with: .fade)
+                        self?.insertTweets(newTweets)
                     }
                 }
+                self?.refreshControl?.endRefreshing()
             })
+        } else {
+            refreshControl?.endRefreshing()
         }
+    }
+    
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        searchForTweets()
+    }
+    
+    func insertTweets(_ newTweets: [Twitter.Tweet]) {
+        tweets.insert(newTweets, at: 0)
+        tableView.insertSections([0], with: .fade)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -87,7 +100,7 @@ class TweetTableViewController: UITableViewController,
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Tweet", for: indexPath)
         
-        let tweet: Tweet = tweets[indexPath.section][indexPath.row]
+        let tweet: Twitter.Tweet = tweets[indexPath.section][indexPath.row]
 //        cell.textLabel?.text = tweet.text
 //        cell.detailTextLabel?.text = tweet.user.name
         if let tweetCell = cell as? TweetTableViewCell {
@@ -97,4 +110,7 @@ class TweetTableViewController: UITableViewController,
         return cell
     }
  
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "\(tweets.count - section)"
+    }
 }

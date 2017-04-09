@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Twitter/Twitter.xcodeproj">
+      location = "group:Smashtag.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Smashtag.xcodeproj">
+      location = "group:Twitter/Twitter.xcodeproj">
    </FileRef>
 </Workspace>
