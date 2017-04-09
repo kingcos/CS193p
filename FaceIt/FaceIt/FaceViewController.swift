@@ -17,9 +17,9 @@ class FaceViewController: VCLLoggingViewController {
             let pinchRecognizer = UIPinchGestureRecognizer(target: faceView, action: handler)
             faceView.addGestureRecognizer(pinchRecognizer)
             // 点按手势
-            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(toggleEyes(byReactingTp:)))
-            tapRecognizer.numberOfTapsRequired = 1
-            faceView.addGestureRecognizer(tapRecognizer)
+//            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(toggleEyes(byReactingTp:)))
+//            tapRecognizer.numberOfTapsRequired = 1
+//            faceView.addGestureRecognizer(tapRecognizer)
             // 上下扫手势
             let swipeUpRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(increaseHappiness))
             swipeUpRecognizer.direction = .up
@@ -32,7 +32,7 @@ class FaceViewController: VCLLoggingViewController {
             updateUI()
         }
     }
-
+    
     // 初始化表情
     var expression = FacialExpression(eyes: .closed, mouth: .neutral) {
         didSet {
@@ -45,6 +45,30 @@ class FaceViewController: VCLLoggingViewController {
                                    .smile: 1.0,
                                    .neutral: 0.0,
                                    .smirk: -0.5]
+    
+    private struct HeadShake {
+        static let angle = CGFloat.pi / 6
+        static let segmentDuration: TimeInterval = 0.5
+    }
+    
+    private func rotateFace(by angle: CGFloat) {
+        faceView.transform = faceView.transform.rotated(by: angle)
+    }
+    
+    private func shakeHead() {
+        UIView.animate(withDuration: HeadShake.segmentDuration,
+                       animations: { self.rotateFace(by: HeadShake.angle) },
+                       completion: { finished in
+                        if finished {
+                            UIView.animate(withDuration: HeadShake.segmentDuration,
+                                           animations: { self.rotateFace(by: -HeadShake.angle * 2) },
+                                           completion: { finished in
+                                            UIView.animate(withDuration: HeadShake.segmentDuration,
+                                                           animations: { self.rotateFace(by: HeadShake.angle) })
+                            })
+                        }
+        })
+    }
     
     // 更新 UI
     private func updateUI() {
@@ -76,5 +100,8 @@ class FaceViewController: VCLLoggingViewController {
         expression = expression.sadder
     }
     
+    @IBAction func shakeHead(_ sender: UITapGestureRecognizer) {
+        shakeHead()
+    }
 }
 
