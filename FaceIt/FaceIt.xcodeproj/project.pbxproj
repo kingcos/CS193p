@@ -18,6 +18,7 @@
 		84F92F491E603782008EEBA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F92F471E603782008EEBA1 /* LaunchScreen.storyboard */; };
 		84F92F521E603995008EEBA1 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F92F511E603995008EEBA1 /* FaceView.swift */; };
 		84F92F541E612932008EEBA1 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F92F531E612932008EEBA1 /* FacialExpression.swift */; };
+		84FC9CB71E9BC11C002FB4A3 /* ExpressionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC9CB61E9BC11C002FB4A3 /* ExpressionEditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		84F92F4A1E603782008EEBA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F92F511E603995008EEBA1 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		84F92F531E612932008EEBA1 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
+		84FC9CB61E9BC11C002FB4A3 /* ExpressionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionEditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				842D6D791E6D3C6500A2DFDD /* EmotionsViewController.swift */,
 				842D6D7B1E6D643600A2DFDD /* VCLLoggingViewController.swift */,
 				84EBD56F1E99331100CF5D63 /* BlinkingFaceViewController.swift */,
+				84FC9CB61E9BC11C002FB4A3 /* ExpressionEditorViewController.swift */,
 				84F92F501E603796008EEBA1 /* Supporting Files */,
 			);
 			path = FaceIt;
@@ -169,6 +172,7 @@
 				842D6D7A1E6D3C6500A2DFDD /* EmotionsViewController.swift in Sources */,
 				84EBD5701E99331100CF5D63 /* BlinkingFaceViewController.swift in Sources */,
 				84F92F3F1E603782008EEBA1 /* AppDelegate.swift in Sources */,
+				84FC9CB71E9BC11C002FB4A3 /* ExpressionEditorViewController.swift in Sources */,
 				84EBD5721E99C61C00CF5D63 /* EyeView.swift in Sources */,
 				84F92F521E603995008EEBA1 /* FaceView.swift in Sources */,
 			);

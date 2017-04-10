@@ -71,7 +71,7 @@ class FaceViewController: VCLLoggingViewController {
     }
     
     // 更新 UI
-    private func updateUI() {
+    func updateUI() {
         switch expression.eyes {
         case .open:
             // ?: 当 faceView 未初始化（为 nil），则后续代码不执行；若不加 ? 且为 nil 时，程序崩溃
@@ -79,7 +79,9 @@ class FaceViewController: VCLLoggingViewController {
         case .closed:
             faceView?.eyesOpen = false
         case .squinting:
-            faceView?.eyesOpen = false
+//            Lecture 15
+//            faceView?.eyesOpen = false
+            break
         }
         
         faceView?.mouthCurvature = mouthCurvatures[expression.mouth] ?? 0.0
