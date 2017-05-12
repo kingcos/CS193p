@@ -4,10 +4,12 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 
 [中文版 README](README_CN.md)
 
+![](https://img.shields.io/badge/language-swift-orange.svg) ![](https://img.shields.io/badge/license-MIT-000000.svg)
+
 ## Info
 
-- Xcode 8.2.1
-- Swift 3.0.1
+- Xcode 8.0+
+- Swift 3.0+
 
 ## Preface
 
@@ -22,9 +24,10 @@ I will share my own notes & code here. If you find some bugs, please issue me!
 - Code
   - [Calculator](/Calculator/)
   - [CalculatorPlayground](/CalculatorPlayground.playground/)
-  - [FaceIt](/FaceIt)
-  - [Cassini](/Cassini)
-  - [Smashtag](/Smashtag)
+  - [FaceIt](/FaceIt/)
+  - [Cassini](/Cassini/)
+  - [Smashtag](/Smashtag/)
+  - [CoreDataExample](/CoreDataExample/)
 
 ### Document
 
@@ -35,6 +38,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [CS193p Lecture 06 Notes (zh-CN)](/Lecture06/)
   - [CS193p Lecture 07 Notes (zh-CN)](/Lecture07/)
   - [CS193p Lecture 08 Notes (zh-CN)](/Lecture08/)
+  - [CS193p Lecture 10 Notes (zh-CN)](/Lecture10/)
 
 - Code
   - [Lecture 03 Playground](/Lecture03/)
@@ -42,14 +46,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [Lecture 05 Demo](/Lecture05/)
   - [Lecture 08 Demo](/Lecture08/)
 
-## Personal Info.
+## Contact Me
 
 - [Twitter](https://twitter.com/mmdadao)
 - [WeiBo (zh-CN)](http://weibo.com/u/1798410923)
-- [Blog (zh-CN)](http://maimieng.com)
-- [JianShu (zh-CN)](http://www.jianshu.com/u/b88081164fe8)
-- [JueJin (zh-CN)](https://juejin.im/user/576a484d1532bc006046d078)
-
-## LICENSE
-
-MIT

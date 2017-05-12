@@ -4,10 +4,12 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 
 [English Version README](README.md)
 
+![](https://img.shields.io/badge/language-swift-orange.svg) ![](https://img.shields.io/badge/license-MIT-000000.svg)
+
 ## 简介
 
-- Xcode 8.2.1
-- Swift 3.0.1
+- Xcode 8.0+
+- Swift 3.0+
 
 ## 前言
 
@@ -25,6 +27,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [FaceIt](/FaceIt)
   - [Cassini](/Cassini)
   - [Smashtag](/Smashtag)
+  - [CoreDataExample](/CoreDataExample/)
 
 ### 文档
 
@@ -41,6 +44,8 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [CS193p 查漏补缺（五）Lecture 07 - 简书](http://www.jianshu.com/p/4c0194f149d0)
   - [CS193p 查漏补缺（六）Lecture 08](/Lecture08/)
   - [CS193p 查漏补缺（六）Lecture 08 - 简书](http://www.jianshu.com/p/d5f5b8e52a01)
+  - [CS193p 查漏补缺（七）Lecture 10](/Lecture10/)
+  - [CS193p 查漏补缺（七）Lecture 10 - 简书](http://www.jianshu.com/p/d5f5b8e52a01)
 
 - 代码
   - [Lecture 03 Playground](/Lecture03/)
@@ -65,10 +70,3 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 
 - [微博](http://weibo.com/u/1798410923)
 - [推特](https://twitter.com/mmdadao)
-- [博客](http://maimieng.com)
-- [简书](http://www.jianshu.com/u/b88081164fe8)
-- [掘金](https://juejin.im/user/576a484d1532bc006046d078)
-
-## 许可
-
-MIT

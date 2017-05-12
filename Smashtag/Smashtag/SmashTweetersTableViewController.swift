@@ -41,7 +41,7 @@ class SmashTweetersTableViewController: FetchedResultsTableViewController {
         if let context = container?.viewContext, mention != nil {
             let request: NSFetchRequest<TwitterUser> = TwitterUser.fetchRequest()
             request.sortDescriptors = [NSSortDescriptor(key: "handle", ascending: true, selector: #selector(NSString.localizedCaseInsensitiveCompare(_:)))]
-            request.predicate = NSPredicate(format: "any tweets.text contains[c] %@ !handle beginswith[c] %@", mention!, "The")
+            request.predicate = NSPredicate(format: "any tweets.text contains[c] %@ AND !handle beginswith[c] %@", mention!, "a")
             fetchedResultsController = NSFetchedResultsController<TwitterUser>(fetchRequest: request,
                                                                                managedObjectContext: context,
                                                                                sectionNameKeyPath: nil,
