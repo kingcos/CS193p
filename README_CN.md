@@ -45,7 +45,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [CS193p 查漏补缺（六）Lecture 08](/Lecture08/)
   - [CS193p 查漏补缺（六）Lecture 08 - 简书](http://www.jianshu.com/p/d5f5b8e52a01)
   - [CS193p 查漏补缺（七）Lecture 10](/Lecture10/)
-  - [CS193p 查漏补缺（七）Lecture 10 - 简书](http://www.jianshu.com/p/d5f5b8e52a01)
+  - [CS193p 查漏补缺（七）Lecture 10 - 简书](http://www.jianshu.com/p/0e070d91f302)
 
 - 代码
   - [Lecture 03 Playground](/Lecture03/)
