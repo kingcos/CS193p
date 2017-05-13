@@ -24,7 +24,7 @@ CS193p 是斯坦福大学的一门公开课，今年 iOS 10 & Swift 3.0 的版�
 ### NSManagedObjectContext
 
 - NSManagedObjectContext 是所有 Core Data 操作的核心，是处理被管理对象的内存暂存器。
-- 若创建项目时勾选「Use Core Data」后，可以从 AppDelegate 得到 NSPersistentContainer，并可以在其 viewContext 属性中得到 NSManagedObjectContext。
+- 若创建项目时勾选「Use Core Data」后，可以从 AppDelegate 得到 NSPersistentContainer，并可以在其 `viewContext` 属性中得到 NSManagedObjectContext。
 
 ```Swift
 let container = (UIApplication.shared.delegate as! AppDelegate).persistentContainer let context: NSManagedObjectContext = container.viewContext
@@ -77,7 +77,7 @@ do {
 ```
 
 - KVC 不安全，因为需要使用容易出错的字符串，取代方法：
-- 1.图形编辑器中，将实体的 Codegen 类型改为 「Category/Extension」（「Manual/None」选项意味着将使用 KVC 手动访问属性），创建与实体同名（推荐）的 NSManagedObject 子类。多 Module 中，需要设置 Module「Current Product Module」
+- 1.图形编辑器中，将实体的 Codegen 类型改为 「Category/Extension」（「Manual/None」选项意味着将使用 KVC 手动访问属性），创建与实体同名（推荐）的 NSManagedObject 子类。多 Module 中，需要设置 Module 为「Current Product Module」
 
 ```Swift
 // 取代 NSEntityDescription 创建实体
@@ -141,15 +141,15 @@ let recentTweeters = try? context.fetch(request)
 for user in recentTweeters {
     // 未断层对象
     print(“fetched user \(user)”)
-    // 当只有访问 NSManagedObject 的内部数据才断层
+    // 当只有访问 NSManagedObject 的内部数据才 Faulting（断层）
     print(“fetched user named \(user.name)”)
 }
 ```
 
 ### 线程安全
 
-- NSManagedObjectContext 不是线程安全的，但 Core Data 非常快；其使用以队列为基的并发模型，通常只在主队列和 AppDelegate.viewContext 中使用。
-- NSManagedObjectContext 的线程安全访问 `context.performBlock {}`。
+- NSManagedObjectContext 不是线程安全的，但 Core Data 执行速度较快；其使用以队列为基的并发模型，通常只在主队列和 `AppDelegate.viewContext` 中使用。
+- NSManagedObjectContext 的线程安全访问：`context.performBlock {}`。
 
 ```Swift
 AppDelegate.persistentContainer.performBackgroundTask { context in
@@ -160,6 +160,7 @@ AppDelegate.persistentContainer.performBackgroundTask { context in
 
 ### NSFetchedResultsController
 
+- NSFetchedResultsController 是方便开发者提取出需要 Core Data 为 Table View 提供数据源的控制器。
 - UITableViewDataSource 中使用 NSFetchedResultsController：
 
 ```Swift
@@ -179,19 +180,20 @@ func tableView(sender: UITableView, numberOfRowsInSection section: Int) -> Int {
 func tableView(_ tv: UITableView, cellForRowAt indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tv.dequeue...
     if let obj = fetchedResultsController.object(at: indexPath) {
-    // obj will be an NSManagedObject (or subclass thereof) that fetches into this row
-    // obj 为 NSManagedObject 或
+        // ...
     }
     return cell
 }
 ```
 
-
 ```Swift
-let frc = NSFetchedResultsController<Tweet>( // note this is a generic type fetchRequest: request,
-managedObjectContext: context,
-sectionNameKeyPath: keyThatSaysWhichAttributeIsTheSectionName,
-cacheName: “MyTwitterQueryCache”)
+// 初始化需要四个参数：fetchRequest managedObjectContext section 的键路径 缓存标示
+let frc = NSFetchedResultsController<Tweet>(
+    fetchRequest: request,
+    managedObjectContext: context,
+    sectionNameKeyPath: keyThatSaysWhichAttributeIsTheSectionName,
+    cacheName: “MyTwitterQueryCache”
+)
 ```
 
 ## Reference
