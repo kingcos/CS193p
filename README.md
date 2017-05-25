@@ -28,6 +28,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [Cassini](/Cassini/)
   - [Smashtag](/Smashtag/)
   - [CoreDataExample](/CoreDataExample/)
+  - [Asteroids](/Asteroids/)
 
 ### Document
 
@@ -39,6 +40,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [CS193p Lecture 07 Notes (zh-CN)](/Lecture07/)
   - [CS193p Lecture 08 Notes (zh-CN)](/Lecture08/)
   - [CS193p Lecture 10 Notes (zh-CN)](/Lecture10/)
+  - [CS193p Lecture 13 Notes (zh-CN)](/Lecture13/)
 
 - Code
   - [Lecture 03 Playground](/Lecture03/)

@@ -28,6 +28,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [Cassini](/Cassini)
   - [Smashtag](/Smashtag)
   - [CoreDataExample](/CoreDataExample/)
+  - [Asteroids](/Asteroids/)
 
 ### 文档
 
@@ -46,6 +47,8 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [CS193p 查漏补缺（六）Lecture 08 - 简书](http://www.jianshu.com/p/d5f5b8e52a01)
   - [CS193p 查漏补缺（七）Lecture 10](/Lecture10/)
   - [CS193p 查漏补缺（七）Lecture 10 - 简书](http://www.jianshu.com/p/0e070d91f302)
+  - [CS193p 查漏补缺（八）Lecture 13 - 简书](/Lecture13/)
+  - [CS193p 查漏补缺（八）Lecture 13 - 简书](http://www.jianshu.com/p/45d32fd94356)
 
 - 代码
   - [Lecture 03 Playground](/Lecture03/)
