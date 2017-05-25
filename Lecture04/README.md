@@ -2,10 +2,9 @@
 
 > Developing iOS 10 Apps with Swift - CS193p
 
-- Info:
- - Swift 3.0
- - Xcode 8.2.1
- - macOS 10.12.4 beta (16E154a)
+| Date | Notes | Swift | Xcode |
+|:-----:|:-----:|:-----:|:-----:|
+| 2017-02-26 | 首次提交 | 3.0 | 8.2.1 |
 
 ## Preface
 
