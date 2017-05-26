@@ -17,6 +17,8 @@ CS193P is an iOS lesson from Stanford University in Spring, 2017. You can learn 
 
 I will share my own notes & code here. If you find some bugs, please issue me!
 
+**Updated completely.**
+
 ## Content
 
 ### Video
@@ -42,6 +44,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [CS193p Lecture 10 Notes (zh-CN)](/Lecture10/)
   - [CS193p Lecture 13 Notes (zh-CN)](/Lecture13/)
   - [CS193p Lecture 16 Notes (zh-CN)](/Lecture16/)
+  - [CS193p Lecture 17 Notes (zh-CN)](/Lecture17/)
 
 - Code
   - [Lecture 03 Playground](/Lecture03/)

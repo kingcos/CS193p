@@ -17,6 +17,8 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 
 之前虽然也有听过他的课，但没有坚持下来，也没有做相应的笔记。这次希望可以坚持看完，并且与大家分享笔记、心得。
 
+**更新已完结。**
+
 ## 目录
 
 ### 视频
@@ -51,6 +53,8 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [CS193p 查漏补缺（八）Lecture 13 - 简书](http://www.jianshu.com/p/45d32fd94356)
   - [CS193p 查漏补缺（九）Lecture 16](/Lecture16/)
   - [CS193p 查漏补缺（九）Lecture 16 - 简书](http://www.jianshu.com/p/7dd2d29d78db)
+  - [CS193p 查漏补缺（十）Lecture 17](/Lecture17/)
+  - [CS193p 查漏补缺（十）Lecture 17 - 简书](http://www.jianshu.com/p/3a43528a8db4)
 
 - 代码
   - [Lecture 03 Playground](/Lecture03/)
