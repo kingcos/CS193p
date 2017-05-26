@@ -41,6 +41,7 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [CS193p Lecture 08 Notes (zh-CN)](/Lecture08/)
   - [CS193p Lecture 10 Notes (zh-CN)](/Lecture10/)
   - [CS193p Lecture 13 Notes (zh-CN)](/Lecture13/)
+  - [CS193p Lecture 16 Notes (zh-CN)](/Lecture16/)
 
 - Code
   - [Lecture 03 Playground](/Lecture03/)

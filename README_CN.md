@@ -47,8 +47,10 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
   - [CS193p 查漏补缺（六）Lecture 08 - 简书](http://www.jianshu.com/p/d5f5b8e52a01)
   - [CS193p 查漏补缺（七）Lecture 10](/Lecture10/)
   - [CS193p 查漏补缺（七）Lecture 10 - 简书](http://www.jianshu.com/p/0e070d91f302)
-  - [CS193p 查漏补缺（八）Lecture 13 - 简书](/Lecture13/)
+  - [CS193p 查漏补缺（八）Lecture 13](/Lecture13/)
   - [CS193p 查漏补缺（八）Lecture 13 - 简书](http://www.jianshu.com/p/45d32fd94356)
+  - [CS193p 查漏补缺（九）Lecture 16](/Lecture16/)
+  - [CS193p 查漏补缺（九）Lecture 16 - 简书](http://www.jianshu.com/p/7dd2d29d78db)
 
 - 代码
   - [Lecture 03 Playground](/Lecture03/)
@@ -68,6 +70,7 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 - [探究 UIViewController 生命周期](http://www.jianshu.com/p/9d3d95e1ef5a)
 - [Swift 中的错误处理](http://www.jianshu.com/p/16bfad50c39a)
 - [小窥 iOS 中的 Target-Action 设计模式](http://www.jianshu.com/p/b00056fac0a8)
+- [浅谈 iOS 应用启动过程](http://www.jianshu.com/p/ec4a9b3d2576)
 
 ## 个人
 
