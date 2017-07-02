@@ -36,25 +36,15 @@ Notes &amp; code for CS193P - Developing iOS 10 Apps with Swift
 
 - 笔记
   - [CS193p 查漏补缺（一）Lecture 03](/Lecture03/)
-  - [CS193p 查漏补缺（一）Lecture 03 - 简书](http://www.jianshu.com/p/95cb7f051792)
   - [CS193p 查漏补缺（二）Lecture 04](/Lecture04/)
-  - [CS193p 查漏补缺（二）Lecture 04 - 简书](http://www.jianshu.com/p/b850e8d99316)
   - [CS193p 查漏补缺（三）Lecture 05](/Lecture05/)
-  - [CS193p 查漏补缺（三）Lecture 05 - 简书](http://www.jianshu.com/p/7664bf96fe3d)
   - [CS193p 查漏补缺（四）Lecture 06](/Lecture06/)
-  - [CS193p 查漏补缺（四）Lecture 06 - 简书](http://www.jianshu.com/p/e481c69db305)
   - [CS193p 查漏补缺（五）Lecture 07](/Lecture07/)
-  - [CS193p 查漏补缺（五）Lecture 07 - 简书](http://www.jianshu.com/p/4c0194f149d0)
   - [CS193p 查漏补缺（六）Lecture 08](/Lecture08/)
-  - [CS193p 查漏补缺（六）Lecture 08 - 简书](http://www.jianshu.com/p/d5f5b8e52a01)
   - [CS193p 查漏补缺（七）Lecture 10](/Lecture10/)
-  - [CS193p 查漏补缺（七）Lecture 10 - 简书](http://www.jianshu.com/p/0e070d91f302)
   - [CS193p 查漏补缺（八）Lecture 13](/Lecture13/)
-  - [CS193p 查漏补缺（八）Lecture 13 - 简书](http://www.jianshu.com/p/45d32fd94356)
   - [CS193p 查漏补缺（九）Lecture 16](/Lecture16/)
-  - [CS193p 查漏补缺（九）Lecture 16 - 简书](http://www.jianshu.com/p/7dd2d29d78db)
   - [CS193p 查漏补缺（十）Lecture 17](/Lecture17/)
-  - [CS193p 查漏补缺（十）Lecture 17 - 简书](http://www.jianshu.com/p/3a43528a8db4)
 
 - 代码
   - [Lecture 03 Playground](/Lecture03/)
