@@ -2,9 +2,9 @@
 
 > Developing iOS 10 Apps with Swift - CS193p
 
-| Date | Notes | Swift | Xcode |
-|:-----:|:-----:|:-----:|:-----:|
-| 2017-02-21 | 首次提交 | 3.0 | 8.2.1 |
+|    Date    | Notes | Swift | Xcode |
+| :--------: | :---: | :---: | :---: |
+| 2017-02-21 | 首次提交  |  3.0  | 8.2.1 |
 
 ## Preface
 
@@ -34,6 +34,13 @@ label.text = "Optional Chain"
 if let text = label?.text?.hashValue {
     print(text)
 }
+```
+
+- 可选类型的”默认值“操作符。
+```swift
+let defaultColorName = "red"
+var userDefinedColorName: String?   // defaults to nil
+var colorNameToUse = userDefinedColorName ?? defaultColorName
 ```
 
 ## Tuple
@@ -150,7 +157,7 @@ struct TypeDemo {
 
 TypeDemo.testTypeMethod()
 print(TypeDemo.TypeProperty)
- ```
+```
 
 ## Array<T> Methods
 

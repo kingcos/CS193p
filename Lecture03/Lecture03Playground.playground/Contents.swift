@@ -17,6 +17,10 @@ if let text = label?.text?.hashValue {
     print(text)
 }
 
+let defaultColorName = "red"
+var userDefinedColorName: String?   // defaults to nil
+var colorNameToUse = userDefinedColorName ?? defaultColorName
+
 // Tuple
 func getTemperature() -> (celsius: Double, fahrenheit: Double) {
     return (10.0, 50.0)
