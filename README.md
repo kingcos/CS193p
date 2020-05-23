@@ -69,8 +69,8 @@ I will share my own notes & code here. If you find some bugs, please issue me!
   - [Lecture 05 Demo](/Lecture05/)
   - [Lecture 08 Demo](/Lecture08/)
 
-<details>
+</details>
 
-## Contact Me
+## Contact
 
 - [Twitter](https://twitter.com/kingcos_v)
