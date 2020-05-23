@@ -14,7 +14,7 @@ Notes &amp; code for CS193p - Developing Apps for iOS
 
 | 课程                                                                 | 地址                                                                                                                         |
 | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 1 - Course Logistics and Intro to SwiftUI（课程逻辑与 SwiftUI 简介） | [视频 - YouTuBe](https://youtu.be/jbtqIBpUG7g)                                                                               |
+| 1 - Course Logistics and Intro to SwiftUI（课程组织与 SwiftUI 简介） | [视频 - YouTuBe](https://youtu.be/jbtqIBpUG7g)                                                                               |
 | 2 - MVVM and the Swift Type System（MVVM 与 Swift 类型系统）         | [视频 - YouTuBe](https://youtu.be/4GjXq2Sr55Q)<br>[阅读材料 1](2020/Materials/r1.pdf)<br>[作业材料 1](2020/Materials/a1.pdf) |
 
 <details>
