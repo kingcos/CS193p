@@ -1,4 +1,4 @@
-# CS193P_2017
+# CS193P_2017 & 2020
 
 Notes &amp; code for CS193p - Developing Apps for iOS
 
@@ -12,13 +12,13 @@ Notes &amp; code for CS193p - Developing Apps for iOS
 
 - 关于此次课程的所有材料均来源自 [https://cs193p.sites.stanford.edu](https://cs193p.sites.stanford.edu)。
 
-| 课程                                                                 | 地址                                                                                                                         |
-| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 课程 | 地址 |
+| - | - |
 | 1 - Course Logistics and Intro to SwiftUI（课程组织与 SwiftUI 简介） | [视频 - YouTuBe](https://youtu.be/jbtqIBpUG7g)                                                                               |
 | 2 - MVVM and the Swift Type System（MVVM 与 Swift 类型系统）         | [视频 - YouTuBe](https://youtu.be/4GjXq2Sr55Q)<br>[阅读材料 1](2020/Materials/r1.pdf)<br>[作业材料 1](2020/Materials/a1.pdf) |
 
 <details>
-<summary>-> 关于 CS193p 2017 课程 <-</summary>
+<summary>-> 点击此处查看 2017 年度 CS193p 更多内容 <-</summary>
 
 ## 2017
 

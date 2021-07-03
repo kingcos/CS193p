@@ -1,4 +1,4 @@
-# CS193P_2017
+# CS193P_2017 & 2020
 
 Notes &amp; code for CS193p - Developing Apps for iOS
 
@@ -10,15 +10,15 @@ Notes &amp; code for CS193p - Developing Apps for iOS
 
 ### Materials
 
-- All materials below are come from [https://cs193p.sites.stanford.edu](https://cs193p.sites.stanford.edu).
+- All materials below are from [https://cs193p.sites.stanford.edu](https://cs193p.sites.stanford.edu).
 
-| Lecture                                   | Reference                                                                                                                      |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Lecture | Reference |
+| - | - |
 | 1 - Course Logistics and Intro to SwiftUI | [Video - YouTuBe](https://youtu.be/jbtqIBpUG7g)                                                                                |
 | 2 - MVVM and the Swift Type System        | [Video - YouTuBe](https://youtu.be/4GjXq2Sr55Q)<br>[Reading 1](2020/Materials/r1.pdf)<br>[Assignment 1](2020/Materials/a1.pdf) |
 
 <details>
-<summary>-> For more about CS193p in 2017 <-</summary>
+<summary>-> Click here for more about CS193p of 2017 <-</summary>
 
 ## 2017
 
