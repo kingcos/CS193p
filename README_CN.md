@@ -1,4 +1,4 @@
-# CS193P_2017 & 2020
+# CS193P_2017 & 2021
 
 Notes &amp; code for CS193p - Developing Apps for iOS
 
@@ -6,7 +6,7 @@ Notes &amp; code for CS193p - Developing Apps for iOS
 
 ![](https://img.shields.io/badge/language-swift-orange.svg) ![](https://img.shields.io/badge/license-MIT-000000.svg)
 
-## 2020
+## 2021
 
 ### 课程材料
 
@@ -14,8 +14,7 @@ Notes &amp; code for CS193p - Developing Apps for iOS
 
 | 课程 | 地址 |
 | - | - |
-| 1 - Course Logistics and Intro to SwiftUI（课程组织与 SwiftUI 简介） | [视频 - YouTuBe](https://youtu.be/jbtqIBpUG7g)                                                                               |
-| 2 - MVVM and the Swift Type System（MVVM 与 Swift 类型系统）         | [视频 - YouTuBe](https://youtu.be/4GjXq2Sr55Q)<br>[阅读材料 1](2020/Materials/r1.pdf)<br>[作业材料 1](2020/Materials/a1.pdf) |
+| 1 - Getting Started with SwiftUI（从 SwiftUI 开始） | [视频 - YouTuBe](https://youtu.be/bqu6BquVi2M)|
 
 <details>
 <summary>-> 点击此处查看 2017 年度 CS193p 更多内容 <-</summary>
