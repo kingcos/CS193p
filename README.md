@@ -15,9 +15,9 @@ Notes &amp; code for CS193p - Developing Apps for iOS
 | Lecture | Reference |
 | - | - |
 | 1 - Getting Started with SwiftUI | [Video - YouTuBe](https://youtu.be/bqu6BquVi2M)|
-| 2 - Learning More about SwiftUI | [Video - YouTuBe](https://youtu.be/3lahkdHEhW8) |
+| 2 - Learning More about SwiftUI | [Video - YouTuBe](https://youtu.be/3lahkdHEhW8), [PDF 1](https://github.com/kingcos/CS193p/blob/master/2021/Materials/reading_1.pdf), [PDF 2](https://github.com/kingcos/CS193p/blob/master/2021/Materials/assignment_1.pdf) |
 | 3 - MVVM | [Video - YouTuBe](https://youtu.be/--qKOhdgJAs) |
-| 4 - More MVVM enum Optionals | [Video - YouTuBe](https://youtu.be/oWZOFSYS5GE) |
+| 4 - More MVVM enum Optionals | [Video - YouTuBe](https://youtu.be/oWZOFSYS5GE), [PDF 1](https://github.com/kingcos/CS193p/blob/master/2021/Materials/reading_2.pdf), [PDF 2](https://github.com/kingcos/CS193p/blob/master/2021/Materials/assignment_2.pdf)  |
 | 5 - Properties Layout @ViewBuilder | [Video - YouTuBe](https://www.youtube.com/watch?v=ayQl_F_uMS4) |
 
 <details>
