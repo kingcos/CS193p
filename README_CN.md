@@ -14,7 +14,11 @@ Notes &amp; code for CS193p - Developing Apps for iOS
 
 | 课程 | 地址 |
 | - | - |
-| 1 - Getting Started with SwiftUI（从 SwiftUI 开始） | [视频 - YouTuBe](https://youtu.be/bqu6BquVi2M)|
+| 1 - Getting Started with SwiftUI（从 SwiftUI 开始） | [视频 - YouTuBe](https://youtu.be/bqu6BquVi2M) |
+| 2 - Learning More about SwiftUI（学习更多关于 SwiftUI）| [视频 - YouTuBe](https://youtu.be/3lahkdHEhW8) |
+| 3 - MVVM | [视频 - YouTuBe](https://youtu.be/--qKOhdgJAs) |
+| 4 - More MVVM enum Optionals（更多 MMVM、枚举、可选）| [视频 - YouTuBe](https://youtu.be/oWZOFSYS5GE) |
+| 5 - Properties Layout @ViewBuilder（属性布局 @ViewBuilder）| [视频 - YouTuBe](https://www.youtube.com/watch?v=ayQl_F_uMS4) |
 
 <details>
 <summary>-> 点击此处查看 2017 年度 CS193p 更多内容 <-</summary>
