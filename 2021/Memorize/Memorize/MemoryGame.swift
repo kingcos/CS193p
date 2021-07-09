@@ -11,7 +11,7 @@ import Foundation
 
 struct MemoryGame<CardContent> {
     struct Card: Identifiable {
-        var id: Int
+        let id: Int
         
         var content: CardContent
         var isFaceUp = false
