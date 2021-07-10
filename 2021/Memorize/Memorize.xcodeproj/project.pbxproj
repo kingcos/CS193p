@@ -14,6 +14,7 @@
 		8409DB3C269769300043FE5E /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DB3B269769300043FE5E /* EmojiMemoryGame.swift */; };
 		8409DB3E2697693A0043FE5E /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DB3D2697693A0043FE5E /* MemoryGame.swift */; };
 		8409DB402699E1220043FE5E /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DB3F2699E1220043FE5E /* AspectVGrid.swift */; };
+		8409DB42269A18600043FE5E /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DB41269A18600043FE5E /* Pie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8409DB3B269769300043FE5E /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		8409DB3D2697693A0043FE5E /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		8409DB3F2699E1220043FE5E /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		8409DB41269A18600043FE5E /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8409DB3B269769300043FE5E /* EmojiMemoryGame.swift */,
 				8409DB3D2697693A0043FE5E /* MemoryGame.swift */,
 				8409DB3F2699E1220043FE5E /* AspectVGrid.swift */,
+				8409DB41269A18600043FE5E /* Pie.swift */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8409DB42269A18600043FE5E /* Pie.swift in Sources */,
 				8409DB2A269178B80043FE5E /* EmojiMemoryGameView.swift in Sources */,
 				8409DB28269178B80043FE5E /* MemorizeApp.swift in Sources */,
 				8409DB3E2697693A0043FE5E /* MemoryGame.swift in Sources */,
