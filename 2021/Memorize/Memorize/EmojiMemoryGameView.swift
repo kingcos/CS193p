@@ -21,7 +21,7 @@ struct EmojiMemoryGameView: View {
                     Spacer()
                     shuffle
                 }
-                .padding()
+                .padding(.horizontal)
             }
             deckBody
         }
@@ -120,7 +120,7 @@ struct EmojiMemoryGameView: View {
         if let index = game.cards.firstIndex(where: { $0.id == card.id }) {
             delay = Double(index) * (CardConstants.totalDealtDuation / Double(game.cards.count))
         }
-        return .easeIn(duration: CardConstants.dealDuration).delay(delay)
+        return .easeInOut(duration: CardConstants.dealDuration).delay(delay)
     }
     
     private func zIndex(of card: EmojiMemoryGame.Card) -> Double {
@@ -151,6 +151,7 @@ struct CardView: View {
 //                    .font(font(in: geometry.size))
                     .rotationEffect(.degrees(card.isMatched ? 360 : 0))
                     .animation(.linear(duration: 1).repeatForever(autoreverses: false))
+                    .padding(5)
                     .font(.system(size: DrawingConstants.fontSize))
                     .scaleEffect(scale(thatFits: geometry.size))
             }
@@ -168,7 +169,7 @@ struct CardView: View {
     }
     
     private struct DrawingConstants {
-        static let fontScale: CGFloat = 0.6
+        static let fontScale: CGFloat = 0.7
         static let fontSize: CGFloat = 32
     }
 }
