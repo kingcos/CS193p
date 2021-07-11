@@ -15,10 +15,11 @@ struct Cardify: ViewModifier {
         if isFaceUp {
             shape.fill().foregroundColor(.white)
             shape.strokeBorder(lineWidth: DrawingConstants.lineWidth)
-            content
         } else {
             shape
         }
+        content
+            .opacity(isFaceUp ? 1 : 0)
     }
     
     private struct DrawingConstants {
